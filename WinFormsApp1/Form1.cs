@@ -11,7 +11,6 @@ namespace WinFormsApp1
 
         private void testButton_Click(object sender, EventArgs e)
         {
-            outputLabel.Text = "Thank you very much";
         }
 
 
@@ -43,7 +42,22 @@ namespace WinFormsApp1
 
         private void outputLabel_Click(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void germanButton_Click(object sender, EventArgs e)
+        {
+            translationLabel.Text = "Guten Morgen";
+        }
+
+        private void spanishButton_Click(object sender, EventArgs e)
+        {
+            translationLabel.Text = "Buenos Dias";
+        }
+
+        private void italianButton_Click(object sender, EventArgs e)
+        {
+            translationLabel.Text = "Buongiorno";
         }
     }
 }

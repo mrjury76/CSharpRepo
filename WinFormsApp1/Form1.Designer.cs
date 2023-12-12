@@ -30,9 +30,12 @@
         {
             components = new System.ComponentModel.Container();
             notification = new NotifyIcon(components);
-            testButton = new Button();
             rickRollButton = new Button();
-            outputLabel = new Label();
+            germanButton = new Button();
+            spanishButton = new Button();
+            italianButton = new Button();
+            instructionLabel = new Label();
+            translationLabel = new Label();
             SuspendLayout();
             // 
             // notification
@@ -40,20 +43,9 @@
             notification.Text = "You have been hacked :)";
             notification.Visible = true;
             // 
-            // testButton
-            // 
-            testButton.BackgroundImageLayout = ImageLayout.Center;
-            testButton.Location = new Point(177, 196);
-            testButton.Name = "testButton";
-            testButton.Size = new Size(233, 66);
-            testButton.TabIndex = 0;
-            testButton.Text = "Hello world";
-            testButton.UseVisualStyleBackColor = true;
-            testButton.Click += testButton_Click;
-            // 
             // rickRollButton
             // 
-            rickRollButton.Location = new Point(12, 12);
+            rickRollButton.Location = new Point(3, 337);
             rickRollButton.Name = "rickRollButton";
             rickRollButton.Size = new Size(119, 79);
             rickRollButton.TabIndex = 2;
@@ -61,24 +53,65 @@
             rickRollButton.UseVisualStyleBackColor = true;
             rickRollButton.Click += rickRollButton_Click;
             // 
-            // outputLabel
+            // germanButton
             // 
-            outputLabel.AutoSize = true;
-            outputLabel.Font = new Font("Showcard Gothic", 14.1428576F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            outputLabel.Location = new Point(122, 81);
-            outputLabel.Name = "outputLabel";
-            outputLabel.Size = new Size(0, 42);
-            outputLabel.TabIndex = 3;
-            outputLabel.Click += outputLabel_Click;
+            germanButton.Location = new Point(25, 267);
+            germanButton.Name = "germanButton";
+            germanButton.Size = new Size(131, 40);
+            germanButton.TabIndex = 3;
+            germanButton.Text = "German";
+            germanButton.UseVisualStyleBackColor = true;
+            germanButton.Click += germanButton_Click;
+            // 
+            // spanishButton
+            // 
+            spanishButton.Location = new Point(235, 267);
+            spanishButton.Name = "spanishButton";
+            spanishButton.Size = new Size(131, 40);
+            spanishButton.TabIndex = 4;
+            spanishButton.Text = "Spanish";
+            spanishButton.UseVisualStyleBackColor = true;
+            spanishButton.Click += spanishButton_Click;
+            // 
+            // italianButton
+            // 
+            italianButton.Location = new Point(422, 267);
+            italianButton.Name = "italianButton";
+            italianButton.Size = new Size(131, 40);
+            italianButton.TabIndex = 5;
+            italianButton.Text = "Italian";
+            italianButton.UseVisualStyleBackColor = true;
+            italianButton.Click += italianButton_Click;
+            // 
+            // instructionLabel
+            // 
+            instructionLabel.AutoSize = true;
+            instructionLabel.Location = new Point(95, 33);
+            instructionLabel.Name = "instructionLabel";
+            instructionLabel.Size = new Size(448, 30);
+            instructionLabel.TabIndex = 6;
+            instructionLabel.Text = "Select a language and I will say Good Morning.";
+            // 
+            // translationLabel
+            // 
+            translationLabel.BorderStyle = BorderStyle.FixedSingle;
+            translationLabel.Location = new Point(107, 143);
+            translationLabel.Name = "translationLabel";
+            translationLabel.Size = new Size(411, 37);
+            translationLabel.TabIndex = 7;
+            translationLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // MyFirstProgram
             // 
             AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(607, 428);
-            Controls.Add(outputLabel);
+            Controls.Add(translationLabel);
+            Controls.Add(instructionLabel);
+            Controls.Add(italianButton);
+            Controls.Add(spanishButton);
+            Controls.Add(germanButton);
             Controls.Add(rickRollButton);
-            Controls.Add(testButton);
             Name = "MyFirstProgram";
             Text = "My First Program";
             Load += MyFirstProgram_Load;
@@ -88,8 +121,11 @@
 
         #endregion
         private NotifyIcon notification;
-        private Button testButton;
         private Button rickRollButton;
-        private Label outputLabel;
+        private Button germanButton;
+        private Button spanishButton;
+        private Button italianButton;
+        private Label instructionLabel;
+        private Label translationLabel;
     }
 }
