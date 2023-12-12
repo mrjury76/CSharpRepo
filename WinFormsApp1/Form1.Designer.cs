@@ -42,6 +42,7 @@
             mexicanFlag = new PictureBox();
             countryQuestion = new Label();
             flagLabel = new Label();
+            exitButton = new Button();
             ((System.ComponentModel.ISupportInitialize)canadaFlag).BeginInit();
             ((System.ComponentModel.ISupportInitialize)usaFlag).BeginInit();
             ((System.ComponentModel.ISupportInitialize)mexicanFlag).BeginInit();
@@ -162,11 +163,22 @@
             flagLabel.TextAlign = ContentAlignment.MiddleCenter;
             flagLabel.Click += flagLabel_Click;
             // 
+            // exitButton
+            // 
+            exitButton.Location = new Point(375, 360);
+            exitButton.Name = "exitButton";
+            exitButton.Size = new Size(131, 40);
+            exitButton.TabIndex = 13;
+            exitButton.Text = "Exit";
+            exitButton.UseVisualStyleBackColor = true;
+            exitButton.Click += exitButton_Click;
+            // 
             // MyFirstProgram
             // 
             AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1159, 438);
+            Controls.Add(exitButton);
             Controls.Add(flagLabel);
             Controls.Add(countryQuestion);
             Controls.Add(mexicanFlag);
@@ -201,5 +213,6 @@
         private PictureBox mexicanFlag;
         private Label countryQuestion;
         private Label flagLabel;
+        private Button exitButton;
     }
 }

@@ -84,5 +84,10 @@ namespace WinFormsApp1
         {
             flagLabel.Text = "Mexico";
         }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
