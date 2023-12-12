@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MyFirstProgram));
             notification = new NotifyIcon(components);
             rickRollButton = new Button();
             germanButton = new Button();
@@ -37,8 +36,6 @@
             italianButton = new Button();
             instructionLabel = new Label();
             translationLabel = new Label();
-            dicePicture = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)dicePicture).BeginInit();
             SuspendLayout();
             // 
             // notification
@@ -104,24 +101,11 @@
             translationLabel.TabIndex = 7;
             translationLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // dicePicture
-            // 
-            dicePicture.Anchor = AnchorStyles.Right;
-            dicePicture.Image = (Image)resources.GetObject("dicePicture.Image");
-            dicePicture.Location = new Point(687, 48);
-            dicePicture.Name = "dicePicture";
-            dicePicture.Size = new Size(236, 211);
-            dicePicture.SizeMode = PictureBoxSizeMode.AutoSize;
-            dicePicture.TabIndex = 8;
-            dicePicture.TabStop = false;
-            dicePicture.Click += pictureBox1_Click;
-            // 
             // MyFirstProgram
             // 
             AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1159, 438);
-            Controls.Add(dicePicture);
             Controls.Add(translationLabel);
             Controls.Add(instructionLabel);
             Controls.Add(italianButton);
@@ -131,7 +115,6 @@
             Name = "MyFirstProgram";
             Text = "My First Program";
             Load += MyFirstProgram_Load;
-            ((System.ComponentModel.ISupportInitialize)dicePicture).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -144,6 +127,5 @@
         private Button italianButton;
         private Label instructionLabel;
         private Label translationLabel;
-        private PictureBox dicePicture;
     }
 }
