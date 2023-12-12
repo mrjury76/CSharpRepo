@@ -32,6 +32,7 @@
             notification = new NotifyIcon(components);
             testButton = new Button();
             rickRollButton = new Button();
+            outputLabel = new Label();
             SuspendLayout();
             // 
             // notification
@@ -41,39 +42,54 @@
             // 
             // testButton
             // 
-            testButton.Location = new Point(122, 219);
+            testButton.BackgroundImageLayout = ImageLayout.Center;
+            testButton.Location = new Point(177, 196);
             testButton.Name = "testButton";
-            testButton.Size = new Size(346, 93);
+            testButton.Size = new Size(233, 66);
             testButton.TabIndex = 0;
-            testButton.Text = "Click this for Hello World";
+            testButton.Text = "Hello world";
             testButton.UseVisualStyleBackColor = true;
             testButton.Click += testButton_Click;
             // 
             // rickRollButton
             // 
-            rickRollButton.Location = new Point(157, 342);
+            rickRollButton.Location = new Point(12, 12);
             rickRollButton.Name = "rickRollButton";
-            rickRollButton.Size = new Size(281, 40);
+            rickRollButton.Size = new Size(119, 79);
             rickRollButton.TabIndex = 2;
-            rickRollButton.Text = "Calculate Net Worth";
+            rickRollButton.Text = "Rick Roll Button";
             rickRollButton.UseVisualStyleBackColor = true;
             rickRollButton.Click += rickRollButton_Click;
+            // 
+            // outputLabel
+            // 
+            outputLabel.AutoSize = true;
+            outputLabel.Font = new Font("Showcard Gothic", 14.1428576F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            outputLabel.Location = new Point(122, 81);
+            outputLabel.Name = "outputLabel";
+            outputLabel.Size = new Size(0, 42);
+            outputLabel.TabIndex = 3;
+            outputLabel.Click += outputLabel_Click;
             // 
             // MyFirstProgram
             // 
             AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(607, 428);
+            Controls.Add(outputLabel);
             Controls.Add(rickRollButton);
             Controls.Add(testButton);
             Name = "MyFirstProgram";
             Text = "My First Program";
+            Load += MyFirstProgram_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
         private NotifyIcon notification;
         private Button testButton;
         private Button rickRollButton;
+        private Label outputLabel;
     }
 }

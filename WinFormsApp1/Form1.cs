@@ -11,7 +11,7 @@ namespace WinFormsApp1
 
         private void testButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("HELLO WORLD!");
+            outputLabel.Text = "Thank you very much";
         }
 
 
@@ -22,12 +22,12 @@ namespace WinFormsApp1
             openYouTubeLink(youtubeLink);
         }
 
-        private void openYouTubeLink(string link) //i am adding a line of comments
+        private void openYouTubeLink(string link)
         {
             try
             {
                 // Use Process.Start to open the default web browser with the YouTube link
-                Process.Start(new ProcessStartInfo{FileName = link, UseShellExecute = true});
+                Process.Start(new ProcessStartInfo { FileName = link, UseShellExecute = true });
             }
             catch (Exception ex)
             {
@@ -35,6 +35,15 @@ namespace WinFormsApp1
                 MessageBox.Show("Error opening the link: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        
+
+        private void MyFirstProgram_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void outputLabel_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
