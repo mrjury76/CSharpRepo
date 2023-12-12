@@ -64,5 +64,25 @@ namespace WinFormsApp1
         {
             MessageBox.Show("Dont click that");
         }
+
+        private void flagLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            flagLabel.Text = "Canada";
+        }
+
+        private void usaFlag_Click(object sender, EventArgs e)
+        {
+            flagLabel.Text = "USA";
+        }
+
+        private void mexicanFlag_Click(object sender, EventArgs e)
+        {
+            flagLabel.Text = "Mexico";
+        }
     }
 }
