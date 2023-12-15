@@ -43,6 +43,17 @@
             countryQuestion = new Label();
             flagLabel = new Label();
             exitButton = new Button();
+            firstName = new TextBox();
+            nameDisplay = new Label();
+            readInput = new Button();
+            label1 = new Label();
+            button1 = new Button();
+            button2 = new Button();
+            button3 = new Button();
+            testOutput = new Button();
+            outputBoxTest = new Label();
+            lastName = new TextBox();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)canadaFlag).BeginInit();
             ((System.ComponentModel.ISupportInitialize)usaFlag).BeginInit();
             ((System.ComponentModel.ISupportInitialize)mexicanFlag).BeginInit();
@@ -55,7 +66,7 @@
             // 
             // rickRollButton
             // 
-            rickRollButton.Location = new Point(12, 347);
+            rickRollButton.Location = new Point(12, 682);
             rickRollButton.Name = "rickRollButton";
             rickRollButton.Size = new Size(119, 79);
             rickRollButton.TabIndex = 2;
@@ -65,7 +76,7 @@
             // 
             // germanButton
             // 
-            germanButton.Location = new Point(25, 267);
+            germanButton.Location = new Point(12, 129);
             germanButton.Name = "germanButton";
             germanButton.Size = new Size(131, 40);
             germanButton.TabIndex = 3;
@@ -75,7 +86,7 @@
             // 
             // spanishButton
             // 
-            spanishButton.Location = new Point(235, 267);
+            spanishButton.Location = new Point(170, 129);
             spanishButton.Name = "spanishButton";
             spanishButton.Size = new Size(131, 40);
             spanishButton.TabIndex = 4;
@@ -85,7 +96,7 @@
             // 
             // italianButton
             // 
-            italianButton.Location = new Point(422, 267);
+            italianButton.Location = new Point(317, 129);
             italianButton.Name = "italianButton";
             italianButton.Size = new Size(131, 40);
             italianButton.TabIndex = 5;
@@ -96,7 +107,7 @@
             // instructionLabel
             // 
             instructionLabel.AutoSize = true;
-            instructionLabel.Location = new Point(95, 33);
+            instructionLabel.Location = new Point(12, 24);
             instructionLabel.Name = "instructionLabel";
             instructionLabel.Size = new Size(448, 30);
             instructionLabel.TabIndex = 6;
@@ -105,7 +116,7 @@
             // translationLabel
             // 
             translationLabel.BorderStyle = BorderStyle.FixedSingle;
-            translationLabel.Location = new Point(107, 143);
+            translationLabel.Location = new Point(12, 77);
             translationLabel.Name = "translationLabel";
             translationLabel.Size = new Size(411, 37);
             translationLabel.TabIndex = 7;
@@ -165,7 +176,7 @@
             // 
             // exitButton
             // 
-            exitButton.Location = new Point(375, 360);
+            exitButton.Location = new Point(1110, 721);
             exitButton.Name = "exitButton";
             exitButton.Size = new Size(131, 40);
             exitButton.TabIndex = 13;
@@ -173,11 +184,119 @@
             exitButton.UseVisualStyleBackColor = true;
             exitButton.Click += exitButton_Click;
             // 
+            // firstName
+            // 
+            firstName.Location = new Point(238, 274);
+            firstName.Name = "firstName";
+            firstName.Size = new Size(175, 35);
+            firstName.TabIndex = 14;
+            // 
+            // nameDisplay
+            // 
+            nameDisplay.BackColor = SystemColors.ButtonFace;
+            nameDisplay.BorderStyle = BorderStyle.FixedSingle;
+            nameDisplay.Location = new Point(385, 360);
+            nameDisplay.Name = "nameDisplay";
+            nameDisplay.Size = new Size(184, 40);
+            nameDisplay.TabIndex = 15;
+            // 
+            // readInput
+            // 
+            readInput.Location = new Point(248, 356);
+            readInput.Name = "readInput";
+            readInput.Size = new Size(131, 40);
+            readInput.TabIndex = 16;
+            readInput.Text = "Read Input";
+            readInput.UseVisualStyleBackColor = true;
+            readInput.Click += readInput_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(24, 274);
+            label1.Name = "label1";
+            label1.Size = new Size(212, 30);
+            label1.TabIndex = 17;
+            label1.Text = "Enter your first name:";
+            // 
+            // button1
+            // 
+            button1.Location = new Point(238, 448);
+            button1.Name = "button1";
+            button1.Size = new Size(8, 8);
+            button1.TabIndex = 18;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(268, 486);
+            button2.Name = "button2";
+            button2.Size = new Size(8, 8);
+            button2.TabIndex = 19;
+            button2.Text = "button2";
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(248, 402);
+            button3.Name = "button3";
+            button3.Size = new Size(131, 40);
+            button3.TabIndex = 20;
+            button3.Text = "Clear";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
+            // testOutput
+            // 
+            testOutput.Location = new Point(12, 404);
+            testOutput.Name = "testOutput";
+            testOutput.Size = new Size(131, 40);
+            testOutput.TabIndex = 21;
+            testOutput.Text = "Test Output";
+            testOutput.UseVisualStyleBackColor = true;
+            testOutput.Click += testOutput_Click;
+            // 
+            // outputBoxTest
+            // 
+            outputBoxTest.BorderStyle = BorderStyle.FixedSingle;
+            outputBoxTest.Location = new Point(24, 474);
+            outputBoxTest.Name = "outputBoxTest";
+            outputBoxTest.Size = new Size(321, 43);
+            outputBoxTest.TabIndex = 22;
+            // 
+            // lastName
+            // 
+            lastName.Location = new Point(238, 315);
+            lastName.Name = "lastName";
+            lastName.Size = new Size(175, 35);
+            lastName.TabIndex = 23;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(23, 315);
+            label2.Name = "label2";
+            label2.Size = new Size(209, 30);
+            label2.TabIndex = 24;
+            label2.Text = "Enter your last name:";
+            // 
             // MyFirstProgram
             // 
             AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1159, 438);
+            ClientSize = new Size(1273, 773);
+            Controls.Add(label2);
+            Controls.Add(lastName);
+            Controls.Add(outputBoxTest);
+            Controls.Add(testOutput);
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(button1);
+            Controls.Add(label1);
+            Controls.Add(readInput);
+            Controls.Add(nameDisplay);
+            Controls.Add(firstName);
             Controls.Add(exitButton);
             Controls.Add(flagLabel);
             Controls.Add(countryQuestion);
@@ -214,5 +333,16 @@
         private Label countryQuestion;
         private Label flagLabel;
         private Button exitButton;
+        private TextBox firstName;
+        private Label nameDisplay;
+        private Button readInput;
+        private Label label1;
+        private Button button1;
+        private Button button2;
+        private Button button3;
+        private Button testOutput;
+        private Label outputBoxTest;
+        private TextBox lastName;
+        private Label label2;
     }
 }

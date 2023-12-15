@@ -4,6 +4,7 @@ namespace WinFormsApp1
 {
     public partial class MyFirstProgram : Form
     {
+        string testingOuput = "You have output a string";
         public MyFirstProgram()
         {
             InitializeComponent();
@@ -88,6 +89,21 @@ namespace WinFormsApp1
         private void exitButton_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void readInput_Click(object sender, EventArgs e)
+        {
+            nameDisplay.Text = firstName.Text + lastName.Text;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            nameDisplay.Text = "";
+        }
+
+        private void testOutput_Click(object sender, EventArgs e)
+        {
+            outputBoxTest.Text = "He" + "ll" + "o";
         }
     }
 }
