@@ -69,7 +69,7 @@
             rickRollButton.Location = new Point(12, 682);
             rickRollButton.Name = "rickRollButton";
             rickRollButton.Size = new Size(119, 79);
-            rickRollButton.TabIndex = 2;
+            rickRollButton.TabIndex = 11;
             rickRollButton.Text = "Rick Roll Button";
             rickRollButton.UseVisualStyleBackColor = true;
             rickRollButton.Click += rickRollButton_Click;
@@ -79,7 +79,7 @@
             germanButton.Location = new Point(12, 129);
             germanButton.Name = "germanButton";
             germanButton.Size = new Size(131, 40);
-            germanButton.TabIndex = 3;
+            germanButton.TabIndex = 1;
             germanButton.Text = "German";
             germanButton.UseVisualStyleBackColor = true;
             germanButton.Click += germanButton_Click;
@@ -89,7 +89,7 @@
             spanishButton.Location = new Point(170, 129);
             spanishButton.Name = "spanishButton";
             spanishButton.Size = new Size(131, 40);
-            spanishButton.TabIndex = 4;
+            spanishButton.TabIndex = 2;
             spanishButton.Text = "Spanish";
             spanishButton.UseVisualStyleBackColor = true;
             spanishButton.Click += spanishButton_Click;
@@ -99,7 +99,7 @@
             italianButton.Location = new Point(317, 129);
             italianButton.Name = "italianButton";
             italianButton.Size = new Size(131, 40);
-            italianButton.TabIndex = 5;
+            italianButton.TabIndex = 3;
             italianButton.Text = "Italian";
             italianButton.UseVisualStyleBackColor = true;
             italianButton.Click += italianButton_Click;
@@ -110,7 +110,7 @@
             instructionLabel.Location = new Point(12, 24);
             instructionLabel.Name = "instructionLabel";
             instructionLabel.Size = new Size(448, 30);
-            instructionLabel.TabIndex = 6;
+            instructionLabel.TabIndex = 14;
             instructionLabel.Text = "Select a language and I will say Good Morning.";
             // 
             // translationLabel
@@ -119,7 +119,7 @@
             translationLabel.Location = new Point(12, 77);
             translationLabel.Name = "translationLabel";
             translationLabel.Size = new Size(411, 37);
-            translationLabel.TabIndex = 7;
+            translationLabel.TabIndex = 0;
             translationLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // canadaFlag
@@ -161,7 +161,7 @@
             countryQuestion.Location = new Point(816, 41);
             countryQuestion.Name = "countryQuestion";
             countryQuestion.Size = new Size(207, 30);
-            countryQuestion.TabIndex = 11;
+            countryQuestion.TabIndex = 15;
             countryQuestion.Text = "What country is this?";
             // 
             // flagLabel
@@ -170,7 +170,7 @@
             flagLabel.Location = new Point(656, 281);
             flagLabel.Name = "flagLabel";
             flagLabel.Size = new Size(379, 69);
-            flagLabel.TabIndex = 12;
+            flagLabel.TabIndex = 13;
             flagLabel.TextAlign = ContentAlignment.MiddleCenter;
             flagLabel.Click += flagLabel_Click;
             // 
@@ -179,7 +179,7 @@
             exitButton.Location = new Point(1110, 721);
             exitButton.Name = "exitButton";
             exitButton.Size = new Size(131, 40);
-            exitButton.TabIndex = 13;
+            exitButton.TabIndex = 12;
             exitButton.Text = "Exit";
             exitButton.UseVisualStyleBackColor = true;
             exitButton.Click += exitButton_Click;
@@ -189,7 +189,7 @@
             firstName.Location = new Point(238, 274);
             firstName.Name = "firstName";
             firstName.Size = new Size(175, 35);
-            firstName.TabIndex = 14;
+            firstName.TabIndex = 4;
             // 
             // nameDisplay
             // 
@@ -198,14 +198,14 @@
             nameDisplay.Location = new Point(385, 360);
             nameDisplay.Name = "nameDisplay";
             nameDisplay.Size = new Size(184, 40);
-            nameDisplay.TabIndex = 15;
+            nameDisplay.TabIndex = 8;
             // 
             // readInput
             // 
             readInput.Location = new Point(248, 356);
             readInput.Name = "readInput";
             readInput.Size = new Size(131, 40);
-            readInput.TabIndex = 16;
+            readInput.TabIndex = 6;
             readInput.Text = "Read Input";
             readInput.UseVisualStyleBackColor = true;
             readInput.Click += readInput_Click;
@@ -216,7 +216,7 @@
             label1.Location = new Point(24, 274);
             label1.Name = "label1";
             label1.Size = new Size(212, 30);
-            label1.TabIndex = 17;
+            label1.TabIndex = 16;
             label1.Text = "Enter your first name:";
             // 
             // button1
@@ -242,7 +242,7 @@
             button3.Location = new Point(248, 402);
             button3.Name = "button3";
             button3.Size = new Size(131, 40);
-            button3.TabIndex = 20;
+            button3.TabIndex = 7;
             button3.Text = "Clear";
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
@@ -252,7 +252,7 @@
             testOutput.Location = new Point(12, 404);
             testOutput.Name = "testOutput";
             testOutput.Size = new Size(131, 40);
-            testOutput.TabIndex = 21;
+            testOutput.TabIndex = 9;
             testOutput.Text = "Test Output";
             testOutput.UseVisualStyleBackColor = true;
             testOutput.Click += testOutput_Click;
@@ -263,14 +263,14 @@
             outputBoxTest.Location = new Point(24, 474);
             outputBoxTest.Name = "outputBoxTest";
             outputBoxTest.Size = new Size(321, 43);
-            outputBoxTest.TabIndex = 22;
+            outputBoxTest.TabIndex = 10;
             // 
             // lastName
             // 
             lastName.Location = new Point(238, 315);
             lastName.Name = "lastName";
             lastName.Size = new Size(175, 35);
-            lastName.TabIndex = 23;
+            lastName.TabIndex = 5;
             // 
             // label2
             // 
@@ -278,13 +278,15 @@
             label2.Location = new Point(23, 315);
             label2.Name = "label2";
             label2.Size = new Size(209, 30);
-            label2.TabIndex = 24;
+            label2.TabIndex = 17;
             label2.Text = "Enter your last name:";
             // 
             // MyFirstProgram
             // 
+            AcceptButton = testOutput;
             AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
+            CancelButton = exitButton;
             ClientSize = new Size(1273, 773);
             Controls.Add(label2);
             Controls.Add(lastName);

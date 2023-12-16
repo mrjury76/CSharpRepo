@@ -99,6 +99,7 @@ namespace WinFormsApp1
         private void button3_Click(object sender, EventArgs e)
         {
             nameDisplay.Text = "";
+            firstName.Focus();
         }
 
         private void testOutput_Click(object sender, EventArgs e)
