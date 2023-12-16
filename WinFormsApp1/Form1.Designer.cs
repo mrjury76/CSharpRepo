@@ -144,7 +144,7 @@
             // usaFlag
             // 
             usaFlag.Image = (Image)resources.GetObject("usaFlag.Image");
-            usaFlag.Location = new Point(763, 97);
+            usaFlag.Location = new Point(755, 97);
             usaFlag.Name = "usaFlag";
             usaFlag.Size = new Size(176, 113);
             usaFlag.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -166,7 +166,7 @@
             // countryQuestion
             // 
             countryQuestion.AutoSize = true;
-            countryQuestion.Location = new Point(816, 41);
+            countryQuestion.Location = new Point(755, 24);
             countryQuestion.Name = "countryQuestion";
             countryQuestion.Size = new Size(207, 30);
             countryQuestion.TabIndex = 15;
@@ -347,12 +347,13 @@
             // 
             // Dogs
             // 
+            Dogs.BorderStyle = BorderStyle.FixedSingle;
             Dogs.FormattingEnabled = true;
             Dogs.ItemHeight = 30;
             Dogs.Items.AddRange(new object[] { "Doggies", "Paper", "Cocker Spaniel" });
             Dogs.Location = new Point(375, 536);
             Dogs.Name = "Dogs";
-            Dogs.Size = new Size(210, 154);
+            Dogs.Size = new Size(210, 92);
             Dogs.TabIndex = 21;
             // 
             // MyFirstProgram
