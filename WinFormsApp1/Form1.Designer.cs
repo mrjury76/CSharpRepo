@@ -50,13 +50,21 @@
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
-            testOutput = new Button();
             outputBoxTest = new Label();
             lastName = new TextBox();
             label2 = new Label();
+            groupBox1 = new GroupBox();
+            bmiCalculateButton = new Button();
+            bmiOutputTextBox = new Label();
+            label4 = new Label();
+            label3 = new Label();
+            heightTextBox = new TextBox();
+            weightTextBox = new TextBox();
+            Dogs = new ListBox();
             ((System.ComponentModel.ISupportInitialize)canadaFlag).BeginInit();
             ((System.ComponentModel.ISupportInitialize)usaFlag).BeginInit();
             ((System.ComponentModel.ISupportInitialize)mexicanFlag).BeginInit();
+            groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // notification
@@ -247,16 +255,6 @@
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
-            // testOutput
-            // 
-            testOutput.Location = new Point(12, 404);
-            testOutput.Name = "testOutput";
-            testOutput.Size = new Size(131, 40);
-            testOutput.TabIndex = 9;
-            testOutput.Text = "Test Output";
-            testOutput.UseVisualStyleBackColor = true;
-            testOutput.Click += testOutput_Click;
-            // 
             // outputBoxTest
             // 
             outputBoxTest.BorderStyle = BorderStyle.FixedSingle;
@@ -281,17 +279,93 @@
             label2.TabIndex = 17;
             label2.Text = "Enter your last name:";
             // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(bmiCalculateButton);
+            groupBox1.Controls.Add(bmiOutputTextBox);
+            groupBox1.Controls.Add(label4);
+            groupBox1.Controls.Add(label3);
+            groupBox1.Controls.Add(heightTextBox);
+            groupBox1.Controls.Add(weightTextBox);
+            groupBox1.Location = new Point(649, 458);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(350, 245);
+            groupBox1.TabIndex = 20;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "BMI Calculator";
+            // 
+            // bmiCalculateButton
+            // 
+            bmiCalculateButton.Location = new Point(186, 181);
+            bmiCalculateButton.Name = "bmiCalculateButton";
+            bmiCalculateButton.Size = new Size(131, 40);
+            bmiCalculateButton.TabIndex = 5;
+            bmiCalculateButton.Text = "Calculate";
+            bmiCalculateButton.UseVisualStyleBackColor = true;
+            bmiCalculateButton.Click += bmiCalculateButton_Click;
+            // 
+            // bmiOutputTextBox
+            // 
+            bmiOutputTextBox.Location = new Point(33, 182);
+            bmiOutputTextBox.Name = "bmiOutputTextBox";
+            bmiOutputTextBox.Size = new Size(111, 39);
+            bmiOutputTextBox.TabIndex = 4;
+            bmiOutputTextBox.Click += bmiOutputTextBox_Click;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(33, 118);
+            label4.Name = "label4";
+            label4.Size = new Size(75, 30);
+            label4.TabIndex = 3;
+            label4.Text = "Height";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(29, 62);
+            label3.Name = "label3";
+            label3.Size = new Size(79, 30);
+            label3.TabIndex = 2;
+            label3.Text = "Weight";
+            label3.Click += label3_Click;
+            // 
+            // heightTextBox
+            // 
+            heightTextBox.Location = new Point(142, 115);
+            heightTextBox.Name = "heightTextBox";
+            heightTextBox.Size = new Size(175, 35);
+            heightTextBox.TabIndex = 1;
+            // 
+            // weightTextBox
+            // 
+            weightTextBox.Location = new Point(142, 59);
+            weightTextBox.Name = "weightTextBox";
+            weightTextBox.Size = new Size(175, 35);
+            weightTextBox.TabIndex = 0;
+            // 
+            // Dogs
+            // 
+            Dogs.FormattingEnabled = true;
+            Dogs.ItemHeight = 30;
+            Dogs.Items.AddRange(new object[] { "Doggies", "Paper", "Cocker Spaniel" });
+            Dogs.Location = new Point(375, 536);
+            Dogs.Name = "Dogs";
+            Dogs.Size = new Size(210, 154);
+            Dogs.TabIndex = 21;
+            // 
             // MyFirstProgram
             // 
-            AcceptButton = testOutput;
             AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
             CancelButton = exitButton;
             ClientSize = new Size(1273, 773);
+            Controls.Add(Dogs);
+            Controls.Add(groupBox1);
             Controls.Add(label2);
             Controls.Add(lastName);
             Controls.Add(outputBoxTest);
-            Controls.Add(testOutput);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -317,6 +391,8 @@
             ((System.ComponentModel.ISupportInitialize)canadaFlag).EndInit();
             ((System.ComponentModel.ISupportInitialize)usaFlag).EndInit();
             ((System.ComponentModel.ISupportInitialize)mexicanFlag).EndInit();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -342,9 +418,16 @@
         private Button button1;
         private Button button2;
         private Button button3;
-        private Button testOutput;
         private Label outputBoxTest;
         private TextBox lastName;
         private Label label2;
+        private GroupBox groupBox1;
+        private Label label3;
+        private TextBox heightTextBox;
+        private TextBox weightTextBox;
+        private Label bmiOutputTextBox;
+        private Label label4;
+        private Button bmiCalculateButton;
+        private ListBox Dogs;
     }
 }

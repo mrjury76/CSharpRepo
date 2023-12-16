@@ -106,5 +106,27 @@ namespace WinFormsApp1
         {
             outputBoxTest.Text = "He" + "ll" + "o";
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bmiOutputTextBox_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void bmiCalculateButton_Click(object sender, EventArgs e)
+        {
+            int bmi = int.Parse(weightTextBox.Text) * 703 / int.Parse(heightTextBox.Text);
+            string output = bmi.ToString();
+            bmiOutputTextBox.Text = output;
+        }
     }
 }
